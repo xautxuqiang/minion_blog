@@ -1,0 +1,5 @@
+亲爱的{{ user.username }}
+点击下面的链接来验证你新的邮件地址：
+{{ url_for('auth.change_email', token=token, _external=True) }}
+感谢你的加入，
+小黄人团队
