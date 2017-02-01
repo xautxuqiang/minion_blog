@@ -17,7 +17,7 @@ class Config:
 	MAIL_SENDER = 'xautxuqiang@126.com'
 	ADMIN = 'xautxuqiang@126.com'
 
-	POSTS_PER_PAGE = 20
+	POSTS_PER_PAGE = 12
 	FOLLOWERS_PER_PAGE = 20
 	COMMENTS_PER_PAGE = 10
 

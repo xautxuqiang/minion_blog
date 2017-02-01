@@ -5,14 +5,30 @@
 {% block page_title %}Minion的博客{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-	<h1>你好，{% if current_user.is_authenticated %}{{ current_user.username }}。{% else %}陌生人。{% endif %}</h1>
+
+<div class="row">
+
+<div class="col-xs-12 col-md-2">
+	<h2 class="page-header">类别</h2>
+	{% for i in category %}
+		<div class="post-category"><span class="category-name"><a href="{{ url_for(".category", name=i.name) }}">{{ i.name }}</a></span><span class="category-count">({{ count.get(i.name) }})</span></div>
+	{% endfor %}
+
 </div>
-{% include "_posts.html" %}
-{% if pagination %}
-<div class="pagination">
-	{{ macros.pagination_widget(pagination, '.index') }}
+
+<div class="col-xs-12 col-md-10">
+	<h2 class="page-header">博客</h2>
+
+	{% include "_readmore_posts.html" %}
+
+	{% if pagination %}
+	<div class="pagination">
+		{{ macros.pagination_widget(pagination, '.index') }}
+	</div>
+	{% endif %}
 </div>
-{% endif %}
+
+</div>
+
 {% endblock %}
 

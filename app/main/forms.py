@@ -12,6 +12,7 @@ class NameForm(FlaskForm):
 
 class PostForm(FlaskForm):
 	title = StringField(u"标题",validators=[Required()])
+	category = StringField(u"类别",validators=[Required()])
 	body = PageDownField(u"博客内容", validators=[Required()])
 	submit = SubmitField(u"确认")
 

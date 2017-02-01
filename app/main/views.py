@@ -3,7 +3,7 @@ from datetime import datetime
 from flask import render_template, redirect, url_for, session, flash, request, current_app
 from flask_login import login_required, current_user
 from . import main
-from ..models import User, Role, Permission, Post, Comment
+from ..models import User, Role, Permission, Post, Comment, Category
 from .forms import NameForm, EditProfileForm, EditProfileAdminForm, PostForm, CommentForm
 from .. import db
 from ..decorators import admin_required, permission_required
@@ -14,13 +14,51 @@ def index():
 	page = request.args.get('page', 1, type=int)
 	pagination = Post.query.order_by(Post.timestamp.desc()).paginate(page, per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
 	posts = pagination.items
-	return render_template('index.html', posts=posts, pagination=pagination)
+	Post.on_changed_body1()
+	#类别功能
+	category = Category.query.order_by().all()
+	dict_count = {}
+	for i in category:
+		dict_count[i.name] = Post.query.filter_by(category=i).count()
+	return render_template('index.html', posts=posts, category=category,count=dict_count, pagination=pagination)
+
+@main.route('/cat/<string:name>', methods=['GET','POST'])
+def category(name):
+	page = request.args.get('page', 1, type=int)
+	c = Category.query.filter_by(name=name).all()
+	pagination = Post.query.filter_by(category=c[0]).order_by(Post.timestamp.desc()).paginate(page, per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
+	posts = pagination.items
+	category = Category.query.order_by().all()
+	dict_count = {}
+        for i in category:
+                dict_count[i.name] = Post.query.filter_by(category=i).count()
+	return render_template('index.html', posts=posts, pagination=pagination, category=category, count=dict_count)
+
+@main.route('/<username>/cat/<string:name>', methods=['GET','POST'])
+def category1(username, name):
+        page = request.args.get('page', 1, type=int)
+	user = User.query.filter_by(username=username).first_or_404()
+        c = Category.query.filter_by(name=name).all()
+        pagination = Post.query.filter_by(category=c[0],author=user).order_by(Post.timestamp.desc()).paginate(page, per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
+        posts = pagination.items
+        category = Category.query.order_by().all()
+        dict_count = {}
+        for i in category:
+                dict_count[i.name] = Post.query.filter_by(category=i, author=user).count()
+        return render_template('index.html', posts=posts, pagination=pagination, category=category, count=dict_count, user=user)
+
 
 @main.route('/add-post', methods=['GET', 'POST'])
 def add_post():
 	form = PostForm()
         if current_user.can(Permission.WRITE_ARTICLES) and form.validate_on_submit():
-                post = Post(title=form.title.data, body=form.body.data, author=current_user._get_current_object())
+		if not Category.query.filter_by(name=form.category.data).all():
+			c = Category(name=form.category.data)
+			db.session.add(c)
+			db.session.commit()
+		else:
+			c = Category.query.filter_by(name=form.category.data).all()[0]
+                post = Post(title=form.title.data, category=c, body=form.body.data, author=current_user._get_current_object())
                 db.session.add(post)
                 db.session.commit()
 		flash(u"添加新博客成功!")
@@ -66,9 +104,13 @@ def edit(id):
 def user(username):
 	page = request.args.get('page', 1, type=int)
 	user = User.query.filter_by(username=username).first_or_404()
-	pagination = Post.query.order_by(Post.timestamp.desc()).paginate(page, per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
+	pagination = Post.query.filter_by(author=user).order_by(Post.timestamp.desc()).paginate(page, per_page=current_app.config['POSTS_PER_PAGE'], error_out=False)
 	posts = pagination.items
-	return render_template('user.html', user=user, posts=posts, pagination=pagination)
+	category = Category.query.order_by().all()
+        dict_count = {}
+        for i in category:
+                dict_count[i.name] = Post.query.filter_by(category=i, author=user).count()
+	return render_template('user.html', user=user, posts=posts, pagination=pagination, category=category, count=dict_count)
 
 @main.route('/edit-profile', methods=['GET', 'POST'])
 @login_required

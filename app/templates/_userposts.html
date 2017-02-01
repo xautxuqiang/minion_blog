@@ -2,7 +2,7 @@
         {% for post in posts %}
         <li class="post">
             <div class="post-content">
-		<div class="post-title"><a href="{{ url_for('.post', id=post.id) }}">{{ post.title }} </a> / <a href="{{ url_for('.category', name=post.category.name)}}">{{ post.category.name }}</a></div>
+		<div class="post-title"><a href="{{ url_for('.post', id=post.id) }}">{{ post.title }} </a> / <a href="{{ url_for('.category1', username=user.username, name=post.category.name)}}">{{ post.category.name }}</a></div>
 		<div class="row">
 		<div class="col-md-1">
 		<div class="post-thumbnail">
@@ -10,11 +10,14 @@
 		</div>
 		<div class="col-md-10">
 		<div class="post-body">
-                {% if post.body_html %}
+		{% if post.readmore_body %}
+			{{ post.readmore_body | safe}}
+                {% elif post.body_html %}
                         {{ post.body_html | safe }}
                 {% else %}
                         {{ post.body }}
                 {% endif %}
+		<a href="{{ url_for('.post', id=post.id) }}"><u>阅读全文</u></a>
                 </div>
 		</div>
 		<div class="clearfix visible-xs"></div>

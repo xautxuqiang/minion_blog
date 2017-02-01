@@ -1,0 +1,71 @@
+2017-01-27 02:37:35,113 INFO daemonizing the supervisord process
+2017-01-27 02:37:35,114 INFO supervisord started with pid 2267
+2017-01-27 02:37:36,158 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:37:37,161 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:37:39,165 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:37:42,172 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:37:42,173 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 02:39:40,749 INFO daemonizing the supervisord process
+2017-01-27 02:39:40,775 INFO supervisord started with pid 2392
+2017-01-27 02:39:41,848 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:39:42,851 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:39:44,855 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:39:47,862 INFO spawnerr: can't find command '/home/xu/minion_blog/venv/bin/uwsgi'
+2017-01-27 02:39:47,863 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:01:42,102 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:01:42,253 INFO daemonizing the supervisord process
+2017-01-27 04:01:42,254 INFO supervisord started with pid 2516
+2017-01-27 04:01:43,257 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:01:44,260 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:01:46,265 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:01:49,272 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:01:49,272 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:06:02,122 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:06:02,130 INFO daemonizing the supervisord process
+2017-01-27 04:06:02,131 INFO supervisord started with pid 2551
+2017-01-27 04:06:03,147 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:06:04,150 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:06:06,154 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:06:09,161 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:06:09,161 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:07:42,652 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:07:42,660 INFO daemonizing the supervisord process
+2017-01-27 04:07:42,661 INFO supervisord started with pid 2599
+2017-01-27 04:07:43,664 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:44,710 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:45,865 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:07:45,882 INFO daemonizing the supervisord process
+2017-01-27 04:07:45,884 INFO supervisord started with pid 2603
+2017-01-27 04:07:46,715 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:46,888 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:47,891 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:49,721 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:49,721 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:07:49,895 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:52,901 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:07:52,901 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:08:42,470 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:08:42,483 INFO daemonizing the supervisord process
+2017-01-27 04:08:42,486 INFO supervisord started with pid 2614
+2017-01-27 04:08:43,489 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:08:44,492 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:08:46,496 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:08:49,503 INFO spawnerr: can't find command 'uwsgi'
+2017-01-27 04:08:49,503 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-01-27 04:17:26,738 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:17:26,940 INFO daemonizing the supervisord process
+2017-01-27 04:17:26,941 INFO supervisord started with pid 3361
+2017-01-27 04:17:27,987 INFO spawned: 'minion_blog' with pid 3362
+2017-01-27 04:17:29,327 INFO success: minion_blog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-01-27 04:19:20,448 CRIT Supervisor running as root (no user in config file)
+2017-01-27 04:19:20,474 INFO daemonizing the supervisord process
+2017-01-27 04:19:20,475 INFO supervisord started with pid 3417
+2017-01-27 04:19:21,479 INFO spawned: 'minion_blog' with pid 3418
+2017-01-27 04:19:21,580 INFO exited: minion_blog (exit status 1; not expected)
+2017-01-27 04:19:22,597 INFO spawned: 'minion_blog' with pid 3419
+2017-01-27 04:19:22,619 INFO exited: minion_blog (exit status 1; not expected)
+2017-01-27 04:19:24,625 INFO spawned: 'minion_blog' with pid 3420
+2017-01-27 04:19:24,646 INFO exited: minion_blog (exit status 1; not expected)
+2017-01-27 04:19:27,655 INFO spawned: 'minion_blog' with pid 3423
+2017-01-27 04:19:27,674 INFO exited: minion_blog (exit status 1; not expected)
+2017-01-27 04:19:28,677 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly

@@ -23,6 +23,11 @@ class Follow(db.Model):
 	followed_id = db.Column(db.Integer, db.ForeignKey('users.id'),primary_key=True)
 	timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 
+class Category(db.Model):
+	__tablename__ = 'categorys'
+	id = db.Column(db.Integer, primary_key=True)
+	name = db.Column(db.String(32))
+	posts = db.relationship('Post',backref="category",lazy='dynamic')
 
 class Post(db.Model):
 	__tablename__ = 'posts'
@@ -32,13 +37,27 @@ class Post(db.Model):
 	timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow) 
 	author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 	body_html = db.Column(db.Text)
+	readmore_body = db.Column(db.Text)
 	comments = db.relationship('Comment',backref='post',lazy='dynamic')
+	category_id = db.Column(db.Integer, db.ForeignKey('categorys.id'))
 
 	@staticmethod
 	def on_changed_body(target, value, oldvalue, initiator):
 		allowed_tags = ['a','abbr','acronym','b','blockquote','code','em','i','li','ol','pre','strong','ul','h1','h2','h3','p']
 		target.body_html = bleach.linkify(bleach.clean(markdown(value, output_format='html'), tags=allowed_tags, strip=True))
 
+	@staticmethod
+	def on_changed_body1():
+		for post in Post.query.all():
+			a = ""
+			for i in post.body_html:
+				if i == "\n":
+					break
+				a += i
+			post.readmore_body = a
+			db.session.add(post)
+			db.session.commit()		
+				
 	@staticmethod
 	def generate_fake(count=100):
 		from random import seed, randint
