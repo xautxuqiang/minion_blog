@@ -69,3 +69,133 @@
 2017-01-27 04:19:27,655 INFO spawned: 'minion_blog' with pid 3423
 2017-01-27 04:19:27,674 INFO exited: minion_blog (exit status 1; not expected)
 2017-01-27 04:19:28,677 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 02:49:09,511 CRIT Supervisor running as root (no user in config file)
+2017-02-10 02:49:09,533 INFO daemonizing the supervisord process
+2017-02-10 02:49:09,533 INFO supervisord started with pid 20210
+2017-02-10 02:49:10,536 INFO spawned: 'minion_blog' with pid 20211
+2017-02-10 02:49:11,991 INFO success: minion_blog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-02-10 02:55:02,143 CRIT Supervisor running as root (no user in config file)
+2017-02-10 02:55:02,147 INFO daemonizing the supervisord process
+2017-02-10 02:55:02,147 INFO supervisord started with pid 20625
+2017-02-10 02:55:03,150 INFO spawned: 'minion_blog' with pid 20626
+2017-02-10 02:55:03,162 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:04,164 INFO spawned: 'minion_blog' with pid 20627
+2017-02-10 02:55:04,173 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:06,176 INFO spawned: 'minion_blog' with pid 20628
+2017-02-10 02:55:06,186 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:09,191 INFO spawned: 'minion_blog' with pid 20629
+2017-02-10 02:55:09,200 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:10,202 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 02:55:51,942 CRIT Supervisor running as root (no user in config file)
+2017-02-10 02:55:51,946 INFO daemonizing the supervisord process
+2017-02-10 02:55:51,946 INFO supervisord started with pid 20637
+2017-02-10 02:55:52,949 INFO spawned: 'minion_blog' with pid 20638
+2017-02-10 02:55:52,959 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:53,961 INFO spawned: 'minion_blog' with pid 20639
+2017-02-10 02:55:53,973 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:55,977 INFO spawned: 'minion_blog' with pid 20641
+2017-02-10 02:55:55,986 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:55:58,991 INFO spawned: 'minion_blog' with pid 20642
+2017-02-10 02:55:59,001 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 02:56:00,002 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:17:36,267 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:17:36,270 INFO daemonizing the supervisord process
+2017-02-10 03:17:36,271 INFO supervisord started with pid 20781
+2017-02-10 03:17:37,273 INFO spawned: 'minion_blog' with pid 20782
+2017-02-10 03:17:37,285 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:17:38,287 INFO spawned: 'minion_blog' with pid 20783
+2017-02-10 03:17:38,297 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:17:40,300 INFO spawned: 'minion_blog' with pid 20784
+2017-02-10 03:17:40,310 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:17:43,315 INFO spawned: 'minion_blog' with pid 20785
+2017-02-10 03:17:43,325 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:17:44,326 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:22:42,897 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:22:42,902 INFO daemonizing the supervisord process
+2017-02-10 03:22:42,903 INFO supervisord started with pid 20817
+2017-02-10 03:22:43,906 INFO spawned: 'minion_blog' with pid 20818
+2017-02-10 03:22:43,915 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:22:44,918 INFO spawned: 'minion_blog' with pid 20819
+2017-02-10 03:22:44,928 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:22:46,931 INFO spawned: 'minion_blog' with pid 20822
+2017-02-10 03:22:46,942 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:22:49,947 INFO spawned: 'minion_blog' with pid 20823
+2017-02-10 03:22:49,958 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:22:50,959 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:24:44,411 WARN received SIGTERM indicating exit request
+2017-02-10 03:24:44,430 WARN received SIGHUP indicating restart request
+2017-02-10 03:24:44,454 WARN received SIGHUP indicating restart request
+2017-02-10 03:24:44,480 WARN received SIGHUP indicating restart request
+2017-02-10 03:24:44,484 WARN received SIGHUP indicating restart request
+2017-02-10 03:24:44,492 INFO waiting for minion_blog to die
+2017-02-10 03:24:44,492 WARN received SIGHUP indicating restart request
+2017-02-10 03:24:44,495 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:24:44,499 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:24:44,502 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:24:44,510 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:24:44,625 INFO supervisord started with pid 20625
+2017-02-10 03:24:44,626 INFO supervisord started with pid 20781
+2017-02-10 03:24:44,665 INFO supervisord started with pid 20817
+2017-02-10 03:24:44,669 INFO supervisord started with pid 20637
+2017-02-10 03:24:45,630 INFO spawned: 'minion_blog' with pid 21066
+2017-02-10 03:24:45,632 INFO spawned: 'minion_blog' with pid 21065
+2017-02-10 03:24:45,668 INFO spawned: 'minion_blog' with pid 21068
+2017-02-10 03:24:45,672 INFO spawned: 'minion_blog' with pid 21070
+2017-02-10 03:24:45,673 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:45,676 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:45,709 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:45,711 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:46,677 INFO spawned: 'minion_blog' with pid 21081
+2017-02-10 03:24:46,679 INFO spawned: 'minion_blog' with pid 21082
+2017-02-10 03:24:46,699 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:46,700 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:46,715 INFO spawned: 'minion_blog' with pid 21085
+2017-02-10 03:24:46,716 INFO spawned: 'minion_blog' with pid 21083
+2017-02-10 03:24:46,743 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:46,743 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:47,941 INFO waiting for minion_blog to die
+2017-02-10 03:24:48,703 INFO spawned: 'minion_blog' with pid 21088
+2017-02-10 03:24:48,706 INFO spawned: 'minion_blog' with pid 21089
+2017-02-10 03:24:48,724 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:48,725 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:48,747 INFO spawned: 'minion_blog' with pid 21091
+2017-02-10 03:24:48,749 INFO spawned: 'minion_blog' with pid 21092
+2017-02-10 03:24:48,771 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:48,772 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:50,944 INFO waiting for minion_blog to die
+2017-02-10 03:24:51,730 INFO spawned: 'minion_blog' with pid 21095
+2017-02-10 03:24:51,732 INFO spawned: 'minion_blog' with pid 21096
+2017-02-10 03:24:51,749 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:51,750 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:51,778 INFO spawned: 'minion_blog' with pid 21098
+2017-02-10 03:24:51,778 INFO spawned: 'minion_blog' with pid 21097
+2017-02-10 03:24:51,802 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:51,805 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-10 03:24:52,751 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:24:52,751 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:24:52,803 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:24:52,806 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-10 03:24:53,948 INFO waiting for minion_blog to die
+2017-02-10 03:24:54,949 WARN killing 'minion_blog' (20211) with SIGKILL
+2017-02-10 03:24:54,966 INFO stopped: minion_blog (terminated by SIGKILL)
+2017-02-10 03:24:54,972 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:24:54,977 INFO supervisord started with pid 20210
+2017-02-10 03:24:55,980 INFO spawned: 'minion_blog' with pid 21100
+2017-02-10 03:24:57,431 INFO success: minion_blog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-02-10 03:31:06,892 CRIT Supervisor running as root (no user in config file)
+2017-02-10 03:31:06,930 INFO daemonizing the supervisord process
+2017-02-10 03:31:06,932 INFO supervisord started with pid 905
+2017-02-10 03:31:07,936 INFO spawned: 'minion_blog' with pid 906
+2017-02-10 03:31:09,351 INFO success: minion_blog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-02-10 03:49:40,814 WARN received SIGHUP indicating restart request
+2017-02-10 03:49:40,814 INFO waiting for minion_blog to die
+2017-02-10 03:49:40,814 WARN received SIGTERM indicating exit request
+2017-02-10 03:49:41,818 INFO stopped: minion_blog (exit status 0)
+2017-02-10 03:52:24,253 INFO daemonizing the supervisord process
+2017-02-10 03:52:24,262 INFO supervisord started with pid 872
+2017-02-10 03:52:25,267 INFO spawned: 'minion_blog' with pid 873
+2017-02-10 03:52:26,627 INFO success: minion_blog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-02-14 16:57:59,152 WARN received SIGHUP indicating restart request
+2017-02-14 16:57:59,153 INFO waiting for minion_blog to die
+2017-02-14 16:57:59,153 WARN received SIGTERM indicating exit request
+2017-02-14 16:58:00,156 INFO stopped: minion_blog (exit status 0)

@@ -1,9 +1,10 @@
+#comments {
+    margin-left: 25px;
+}
 .profile-thumbnail {
-    position: absolute;
 }
 .profile-header {
-    min-height: 260px;
-    margin-left: 280px;
+    text-align: left;
 }
 div.post-tabs {
     margin-top: 16px;
@@ -26,13 +27,13 @@ ul.posts li.post:hover {
     background-color: #f0f0f0;
 }
 div.post-title{
-    font-size:30px;
+    font-size:20px;
     color: blue;
 }
 div.post-thumbnail {
 }
 div.post-body {
-    font-size: 20px;
+    font-size: 14px;
 }
 div.post-content {
     min-height: 60px;

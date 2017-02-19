@@ -6,7 +6,7 @@
 		<div class="row">
 		<div class="col-md-1">
 		<div class="post-thumbnail">
-                <a href="{{ url_for('main.user', username=post.author.username)}}"><img class="img-rounded profile-thumbnail" src="{{ post.author.gravatar(size=50) }}"></a></div>
+                <a href="{{ url_for('main.user', username=post.author.username)}}"><img class="img-circle img-responsive profile-thumbnail " src="{{ post.author.gravatar(size=50) }}"></a></div>
 		</div>
 		<div class="col-md-10">
 		<div class="post-body">

@@ -1,0 +1,36 @@
+2017-02-16 21:51:05,858 WARN Failed to clean up '/tmp/minion_blog-stderr---supervisor-ghj4QQ.log'
+2017-02-16 21:51:05,858 WARN Failed to clean up '/tmp/wechat-stderr---supervisor-g4vu_7.log'
+2017-02-16 21:51:05,861 INFO daemonizing the supervisord process
+2017-02-16 21:51:05,862 INFO supervisord started with pid 2875
+2017-02-16 21:51:06,862 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-16 21:51:06,863 INFO spawned: 'minion_blog' with pid 2876
+2017-02-16 21:51:06,874 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-16 21:51:07,875 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-16 21:51:07,876 INFO spawned: 'minion_blog' with pid 2877
+2017-02-16 21:51:07,886 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-16 21:51:09,888 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-16 21:51:09,889 INFO spawned: 'minion_blog' with pid 2878
+2017-02-16 21:51:09,898 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-16 21:51:12,903 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-16 21:51:12,903 INFO gave up: wechat entered FATAL state, too many start retries too quickly
+2017-02-16 21:51:12,904 INFO spawned: 'minion_blog' with pid 2879
+2017-02-16 21:51:12,914 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-16 21:51:13,915 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly
+2017-02-19 20:40:10,482 WARN received SIGHUP indicating restart request
+2017-02-19 20:40:10,644 WARN Failed to clean up '/tmp/minion_blog-stderr---supervisor-ghj4QQ.log'
+2017-02-19 20:40:10,644 WARN Failed to clean up '/tmp/wechat-stderr---supervisor-g4vu_7.log'
+2017-02-19 20:40:10,646 INFO supervisord started with pid 2875
+2017-02-19 20:40:11,647 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-19 20:40:11,649 INFO spawned: 'minion_blog' with pid 7903
+2017-02-19 20:40:11,676 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-19 20:40:12,678 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-19 20:40:12,680 INFO spawned: 'minion_blog' with pid 7931
+2017-02-19 20:40:12,693 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-19 20:40:14,696 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-19 20:40:14,698 INFO spawned: 'minion_blog' with pid 7940
+2017-02-19 20:40:14,709 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-19 20:40:17,713 INFO spawnerr: unknown error making dispatchers for 'wechat': EACCES
+2017-02-19 20:40:17,714 INFO gave up: wechat entered FATAL state, too many start retries too quickly
+2017-02-19 20:40:17,716 INFO spawned: 'minion_blog' with pid 7949
+2017-02-19 20:40:17,728 INFO exited: minion_blog (exit status 1; not expected)
+2017-02-19 20:40:18,729 INFO gave up: minion_blog entered FATAL state, too many start retries too quickly

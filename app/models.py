@@ -41,11 +41,13 @@ class Post(db.Model):
 	comments = db.relationship('Comment',backref='post',lazy='dynamic')
 	category_id = db.Column(db.Integer, db.ForeignKey('categorys.id'))
 
+	#change text to html
 	@staticmethod
 	def on_changed_body(target, value, oldvalue, initiator):
-		allowed_tags = ['a','abbr','acronym','b','blockquote','code','em','i','li','ol','pre','strong','ul','h1','h2','h3','p']
+		allowed_tags = ['a','abbr','acronym','b','blockquote','`','br','code','em','i','li','ol','pre','strong','ul','h1','h2','h3','p']
 		target.body_html = bleach.linkify(bleach.clean(markdown(value, output_format='html'), tags=allowed_tags, strip=True))
 
+	#read_more body 
 	@staticmethod
 	def on_changed_body1():
 		for post in Post.query.all():
@@ -57,7 +59,7 @@ class Post(db.Model):
 			post.readmore_body = a
 			db.session.add(post)
 			db.session.commit()		
-				
+	# auto generate post				
 	@staticmethod
 	def generate_fake(count=100):
 		from random import seed, randint
