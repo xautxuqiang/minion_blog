@@ -11,7 +11,7 @@ class Config:
 	MAIL_PORT = 25
 	MAIL_USE_TLS = True
 	MAIL_USERNAME = 'xautxuqiang'
-	MAIL_PASSWORD = 'xq19940907'
+	MAIL_PASSWORD = '********'
 
 	MAIL_SUBJECT_PREFIX = u'Minion博客园'
 	MAIL_SENDER = 'xautxuqiang@126.com'
